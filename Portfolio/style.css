@@ -1,0 +1,184 @@
+body {
+  background-color: #191919;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#main {
+  width: 330px;
+  height: 100vh;
+  /* border: 3px solid white; */
+  background-color: rgba(25, 25, 25, 0.685);
+}
+#header {
+  height: 4rem;
+}
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#nameHeading {
+  margin-left: 0.5rem;
+  color: rgb(255, 213, 3);
+  font-size: 1.3rem;
+  margin-bottom: 0rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: normal;
+  animation: devAnimation 3s ease-in-out 0s infinite normal;
+}
+
+@keyframes devAnimation {
+  from {
+  }
+  to {
+    text-shadow: #fc0 1px 0 10px;
+  }
+}
+@keyframes iconAnimation {
+  from {
+  }
+  to {
+    color: white;
+  }
+}
+#dev {
+  margin-left: 1.8rem;
+  color: white;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0px;
+}
+
+#bio {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(164, 164, 164);
+  margin-left: 1.7rem;
+  margin-top: 1.2rem;
+  margin-right: 0.4rem;
+  font-family: "Acme", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#techContent{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.85rem;
+}
+#techContent i{
+    font-size: 2rem;
+}
+#githubIcon{
+  margin-left: 1.6rem;
+  color: rgb(143, 143, 143);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  
+  }
+#githubIcon:hover{
+  color: white;
+ 
+}
+#mailIcon{
+  margin-left: 0.5rem;
+  color: rgb(143, 143, 143);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+#mailIcon:hover{
+  color: white;
+ 
+}
+#linkdinIcon{
+  margin-left: 0.5rem;
+  color: rgb(143, 143, 143);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+#linkdinIcon:hover{
+  color: white; 
+}
+#Project{
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: rgb(164, 164, 164);
+  font-weight: 700;
+  margin-left: 1.7rem;
+  margin-top: 1.2rem;
+  margin-right: 0.4rem;
+  font-family: "Acme", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  transition-duration: 0s;
+  transition-timing-function: ease-in;
+}
+#Project:hover{
+  color: white;
+}
+.projectList{
+  font-size: 0.85rem;
+  margin-bottom: 0rem;
+}
+.onkaam{
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  color: rgb(164, 164, 164);
+  font-family: "Acme", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 0.6rem;
+  margin-left: 3rem;
+  margin-right: 1.5rem;
+}
+#projectIcon{
+  font-size: 0.8rem;
+  color: rgb(0, 255, 213);
+  font-weight: 700;
+  font-family: "Acme",sans-serif;
+  margin-left: 3rem;
+}
+.backgroundStack{
+  background-color: black;
+  border: 3px solid rgba(240, 40, 0, 0.304);
+  border-radius: 3px;
+  padding: 0.1rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+#footer{
+  height: 350px;
+}
+#rroomsLive{
+  margin-left: 3rem;
+  font-weight: 700;
+  font-family: "Acme",sans-serif;
+  font-size: 0.75rem;
+  color: rgb(0, 255, 213);
+  margin-left: 3rem;
+  margin-top: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.548);
+  border-radius: 3px;
+  padding: 0.3rem;
+  background-color: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+#rroomsLive:hover{
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  color: black;
+}
