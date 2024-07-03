@@ -11,3 +11,7 @@ app.listen(port,()=>{
 app.get("/home",(req,res)=>{
     res.render("home.ejs");
 })
+app.get("/dice",(req,res)=>{
+    let dice = Math.floor(Math.random() * 6)+1;
+    res.render("diceroll.ejs",{dice})
+})
