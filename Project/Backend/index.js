@@ -6,7 +6,9 @@ app.listen(port,(req,res)=>{
     console.log("Akshat");
 })
 app.get("/registered",(req,res)=>{
-    res.send("Response get");
+    let {Name,Password} = req.query;
+    console.log(Name + Password);
+    res.send(`Response get ${Name}, ${Password}`);
 })
 app.post("/registered",(req,res)=>{
     res.send("Response Post");
