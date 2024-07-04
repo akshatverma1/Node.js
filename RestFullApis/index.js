@@ -28,7 +28,16 @@ let post =[
 app.listen(port, () => {
     console.log("Listen Command");
 })
-
-app.get("/",(req,res)=>{
+app.get("/post",(req,res)=>{
     res.render("index.ejs",{post});
+})
+app.get("/post/new",(req,res)=>{
+    res.render("form.ejs");
+})
+app.post("/post",(req,res)=>{
+    console.log(req.body);
+    let {username,age} = req.body;
+    post.push({username,age});
+    // res.send("accepted");
+    res.redirect("http://localhost:8080/post")
 })
