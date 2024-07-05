@@ -12,6 +12,8 @@
     <% for(Posts of post){ %>
         <h3> <%= Posts.username %></h3>
         <h3> <%= Posts.age %></h3>
+        <a href="http://localhost:8080/post/<%=Posts.id%>">See in details</a>
+        <a href="http://localhost:8080/post/<%=Posts.id%>/edit">Edit</a>
     <% } %>
 
 
