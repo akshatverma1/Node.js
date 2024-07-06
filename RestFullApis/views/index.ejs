@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Posts</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>This is a All Posts</h1>
 
     <% for(Posts of post){ %>
-        <h3> <%= Posts.username %></h3>
-        <h3> <%= Posts.age %></h3>
-        <a href="http://localhost:8080/post/<%=Posts.id%>">See in details</a>
-        <a href="http://localhost:8080/post/<%=Posts.id%>/edit">Edit</a>
+    <h3><%= Posts.username %></h3>
+    <h3><%= Posts.age %></h3>
+    <a href="http://localhost:8080/post/<%=Posts.id%>">See in details</a>
+    <a href="http://localhost:8080/post/<%=Posts.id%>/edit">Edit</a>
+    <br>
+    <form method="post" action="/post/<%=Posts.id%>?_method=DELETE">
+      <button>Delete Button</button>
+    </form>
     <% } %>
 
-
-    <br>
-    <br>
-    <a href="http://localhost:8080/post/new">Create New Post</a> 
-</body>
+    <br />
+    <br />
+    <a href="http://localhost:8080/post/new">Create New Post</a>
+  </body>
 </html>

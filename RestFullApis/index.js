@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const methodOverride = require("method-override");
 
 const port = 8080;
 const path = require("path");
@@ -11,6 +12,7 @@ app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 
 app.use(express.static(path.join(__dirname,"Public")));
+app.use(methodOverride("_method"));
 
 let post =[
     {
@@ -58,11 +60,17 @@ app.patch("/post/:id",(req,res)=>{
     let {id} = req.params;
     let searchPost = post.find((p)=> id === p.id);
     searchPost.age = newContent;
-    console.log(searchPost)
-    res.send("Patch Request");
+    console.log(searchPost);
+    // res.send("Patch Request");
+    res.redirect("http://localhost:8080/post/");
 })
 app.get("/post/:id/edit",(req,res)=>{
     let {id} = req.params;
     let searchPost = post.find((p)=> id === p.id);
     res.render("edit.ejs",{searchPost});
+})
+app.delete("/post/:id",(req,res)=>{
+    let {id} = req.params;
+    post = post.filter((p)=> id !== p.id);
+    res.redirect("/post/");
 })
