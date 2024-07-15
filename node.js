@@ -21,3 +21,6 @@ console.log("EC Study");
 for (int j=1 ; j<10;j++){
     console.log("Akshat");
 }
+for(int h = 0 ; h < 10;h++){
+    console.log("Study for exam");
+}
