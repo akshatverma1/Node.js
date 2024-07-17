@@ -19,6 +19,7 @@ console.log("Akshat");
 console.log("Akshat");
 console.log("Akshat");
 console.log("Akshat");
+console.log("Akshat");
 try{
 connection.query(a,[data],(err,result)=>{
   console.log(result);
