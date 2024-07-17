@@ -15,7 +15,7 @@ let a ="INSERT INTO usertable (id,username,email,pass) VALUES ?";
 let data = [[iddd,"akshatvermaasd","akshaverma2asda12","aasaddas"],
 [idd2,"agfkshatsdasverma","akdfgsdfgshsadaaverma212","aafgsasdddas"]];
 
-
+console.log("Akshat");
 
 
 try{
