@@ -16,8 +16,7 @@ let data = [[iddd,"akshatvermaasd","akshaverma2asda12","aasaddas"],
 [idd2,"agfkshatsdasverma","akdfgsdfgshsadaaverma212","aafgsasdddas"]];
 
 console.log("Akshat");
-
-
+console.log("Akshat");
 try{
 connection.query(a,[data],(err,result)=>{
   console.log(result);
